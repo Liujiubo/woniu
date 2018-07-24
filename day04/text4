@@ -1,0 +1,84 @@
+'''
+s = input("请输入一个字符串:")
+print(s.title())
+'''
+
+s= input("请输入一个字符串:")
+s1=""
+ss=""
+fa = 0
+fe = 0
+i = 1
+if ord('a') <= ord(s[0]) <= ord('z'):
+	s1+=chr(ord(s[0])-32)
+else:
+	ss=s[0]
+	fe=1
+while i<len(s):
+	if fe==1:
+		s1=s1+ss
+		fe=0
+	if s[i]==" ":
+		fa=1
+		ss=s[i]
+		fe=1
+		i+=1
+		continue
+	if fa<1:
+		ss=s[i]
+		fe=1
+	else:
+		ss=chr(ord(s[i])-32)
+		fe=1
+		fa=0
+	i+=1
+if fe==1:
+	s1+=ss
+print(s1)
+
+
+
+'''
+		ssl=s[i+1]
+		if ssl!= " ":
+			ss=chr(ord(s[i+1])-32)
+			fa=0
+			fe=1
+		else:
+			ss=s[i]
+			fa=1
+			fe=1
+'''
+
+'''
+s = input("请输入一个字符串:")
+print(s.split())
+list = s.split()
+print(list)
+i=0
+while i < len(list):
+	ss = str[0]
+	print(ss)
+	if ord('a') <= ord(ss) <= ord('z'):
+		s1+=chr(ord(s[0])-32)
+	else:
+		
+	i+=1
+'''
+'''
+s1=""
+i = 1
+if ord('a') <= ord(s[0]) <= ord('z'):
+	s1+=chr(ord(s[0])-32)
+else:
+	s1+=s[0]
+while i<len(s):
+	if s[i] == ' ':
+		s1+=s[i]
+		s1+=chr(ord(s[i+1])-32)	
+		i+=1
+	else:
+		s1+=s[i]
+	i+=1
+print(s1) 
+'''

@@ -1,0 +1,17 @@
+a = input("请输入一个字符串：")
+b = input("请输入另一个字符串：")
+if len(a)<len(b):
+	l=len(b)
+	a = a.ljust(l-len(a))
+else:
+	l=len(a)
+	b = b.ljust(l-len(b))
+i = 0
+while i<l:
+	if ord(a[i])>ord(b[i]):
+		print("{}大于{}".format(a,b))
+		break
+	else :
+		print("{}大于{}".format(b,a))
+		break
+	i+=1

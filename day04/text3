@@ -1,0 +1,14 @@
+s = input("请输入一个字符串：")
+i = 0
+l=[0]*4
+while i<len(s):
+	if ord('a') <= ord(s[i]) <= ord('z'):
+		l[0]+=1
+	elif ord('A') <= ord(s[i]) <= ord('Z'):
+		l[1]+=1	
+	elif ord('0') <= ord(s[i]) <= ord('9'):
+		l[2]+=1
+	else:
+		l[3]+=1
+	i+=1
+print("小写字母有:{}个,大写字母有:{}个,数字有:{}个,其他字符有:{}个。".format(l[0],l[1],l[2],l[3]))
